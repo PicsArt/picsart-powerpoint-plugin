@@ -1,0 +1,15 @@
+@use "@styles/variables" as *;
+
+.upscale-container {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-extra-large;
+    margin-top: -5px;
+    padding: 4px;
+
+    .input-filters-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-extra-large;
+    }
+}

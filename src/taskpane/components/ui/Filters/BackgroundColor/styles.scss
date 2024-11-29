@@ -1,0 +1,42 @@
+@use "@styles/colors" as *;
+@use "@styles/variables" as *;
+
+.background-color-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .clicked {
+        background-color: #EDEDED;
+        color: #616161;
+        transition: background-color 0.5s ease;
+    }
+
+    .input-filter {
+        height: 18px;
+        width: 88%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        justify-items: center;
+        cursor: pointer;
+
+        border: 1px solid $color-border;
+        border-radius: $border-radius-main;
+        font-size: $font-size-md;
+        padding: $padding-main;
+        transition: background-color 0.5s ease;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .hide-content-container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-extra-large;
+    }
+}

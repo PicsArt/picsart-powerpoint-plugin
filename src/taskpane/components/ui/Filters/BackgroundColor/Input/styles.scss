@@ -1,0 +1,43 @@
+@use "@styles/colors" as *;
+@use "@styles/variables" as *;
+
+.inside-remove-background-container {
+    .input-container {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $padding-main;
+        border-radius: $border-radius-main;
+        border: 1px solid $color-border;
+        font-size: $font-size-md;
+        width: 100%;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        box-sizing: border-box;
+        gap: $gap-medium;
+
+        .text {
+            width: 100%;
+            border: none !important;
+            font-size: $font-size-base;
+            font-family: $font-gilroy-semi-bold;
+        }
+        .icon {
+            width: 10%;
+            width: 17px;
+            height: 17px;
+        }
+        
+        &:hover {
+        border-color: $color-main-text;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        &:focus {
+        border-color: $color-main-text;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        outline: none;
+        
+        }
+    }
+}

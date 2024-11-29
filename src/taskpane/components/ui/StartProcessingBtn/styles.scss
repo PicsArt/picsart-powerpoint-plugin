@@ -1,0 +1,37 @@
+@use "@styles/colors" as *;
+@use "@styles/variables" as *;
+
+.start-processing-btn {
+    .keyset-btn {
+        padding: 6px 12px;
+        height: 40px;
+        width: 100%;
+        font-size: $font-size-lg;
+        font-family: $font-gilroy-semi-bold;
+        border: 1px solid $color-border;
+        border-radius: 32px;
+        background: transparent;
+        color: $color-main-text;
+
+        transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+    
+        &:hover {
+        border: 1px solid $color-action-btns-hovered;
+        background: $color-action-btns-hovered-background;
+        color: $color-action-btns-hovered; 
+        }
+
+    }
+
+    .disabled {
+        padding: 6px 12px;
+        height: 40px;
+        width: 100%;
+        font-family: $font-gilroy-semi-bold;
+        border-radius: 32px;
+        color: $color-main-text;
+        border: 1px solid $color-border;
+        background: $color-disbaled-background;
+    }
+}

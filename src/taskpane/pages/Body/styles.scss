@@ -1,0 +1,9 @@
+@use "@styles/variables" as *;
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: $gap-large;
+}

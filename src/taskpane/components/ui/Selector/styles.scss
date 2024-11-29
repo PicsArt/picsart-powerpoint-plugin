@@ -1,0 +1,60 @@
+@use '@styles/variables' as *;
+@use '@styles/colors' as *;
+
+.selector {
+  font-family: $font-gilroy-semi-bold;
+  font-size: $font-size-md;
+  color: $color-selector-text;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: $padding-main;
+  cursor: pointer;
+  position: relative;
+  
+  &:focus-within {
+    border-color: #888;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); 
+  }
+
+  .label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .options {
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 0;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .option {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+    
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      background-color: #e0e0e0;
+    }
+  }
+}
