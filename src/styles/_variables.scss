@@ -1,0 +1,58 @@
+$font-url-gilroy-regular: "@assets/fonts/Gilroy-Regular.woff2";
+$font-url-gilroy-bold: "@assets/fonts/Gilroy-Bold.woff2";
+$font-url-gilroy-semi-bold: "@assets/fonts/Gilroy-SemiBold.ttf";
+$font-url-gilroy-medium: "@assets/fonts/Gilroy-Medium.woff2";
+
+$font-gilroy-regular: 'Gilroy Regular';
+$font-gilroy-bold: 'Gilroy Bold';
+$font-gilroy-semi-bold: 'Gilroy SemiBold';
+$font-gilroy-medium: 'Gilroy Medium';
+
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url($font-url-gilroy-regular) format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url($font-url-gilroy-bold) format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy SemiBold';
+  src: url($font-url-gilroy-semi-bold) format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url($font-url-gilroy-medium) format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-size-xs: 8px;
+$font-size-sm: 10px;
+$font-size-md: 12px;
+$font-size-base: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+$font-size-xxl: 20px;
+
+$font-weight-bold: 700;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+$font-weight-main: 400;
+
+$padding-main: 12px 16px;
+$border-radius-main: 12px;
+
+$gap-large: 15px;
+$gap-medium: 10px;
+$gap-small: 5px;
+$gap-extra-large: 40px;

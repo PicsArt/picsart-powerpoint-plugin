@@ -1,0 +1,25 @@
+@use "@styles/colors" as *;
+@use "@styles/variables" as *;
+
+footer {
+    gap: $gap-medium;
+    
+    a {
+        color: $color-footer-text;
+        text-decoration: none;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-semi-bold;
+        color: #838282;
+    }
+
+    .footer-logo {
+        width: 66px;
+        height: 16px;
+    }
+
+    .copyright {
+        font-family: $font-gilroy-semi-bold;
+        font-size: $font-size-xs;
+        color: #838282;
+    }
+}

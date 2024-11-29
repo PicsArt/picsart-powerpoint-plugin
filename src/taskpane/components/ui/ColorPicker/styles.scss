@@ -1,0 +1,66 @@
+@use '@styles/variables' as *;
+@use '@styles/colors' as *;
+
+.color-picker-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .react-colorful {
+        width: 100%;
+        height: 135px;
+
+        .react-colorful__hue {
+            display: none;
+        }
+
+        .react-colorful__saturation {
+            border-radius: $border-radius-main !important;
+        }
+    }
+    
+    .slider-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        .icon-container {
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+                width: 21px;
+                height: 21px;
+            }
+        }
+        .color-slider {
+            padding: 16px 11px;
+            width: 198px;
+            .w-color-alpha {
+                height: 4px !important;
+
+            }
+            
+            .w-color-alpha > * {
+                border-radius: 100px !important;
+            }
+            
+            .w-color-alpha-fill {
+                border-radius: 100px !important;
+                transform: translate(-9px, -9px) !important;
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+        }
+    }
+}
+  
